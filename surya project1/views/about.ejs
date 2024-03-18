@@ -1,0 +1,205 @@
+<html>
+    <head>
+        <title>Experiment</title>
+        
+        <style>
+            *{
+    margin:0;
+}
+#a{
+    text-align: center;
+    font-family: cursive;
+    font-style: italic;
+    color: blue;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+.container{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+#b{
+    width:40%;
+    display:inline-flex;
+    padding-left: 80px;
+    border: 2px solid #eee;
+    border-radius: 5px;
+}
+.item-1{
+    border: 2px solid #eee;
+    border-radius: 10px;
+    background:linear-gradient(90deg,white,#eee);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 400px;
+    height: auto;
+    padding-left: 20px;
+    font-size: 20px;
+    margin-bottom: 20px;
+    position: relative;
+    transition: transform 0.3s ease;
+    }
+    .item-1:hover{
+            transform: translateY(-10px);
+        }  
+         
+#c:hover + .x{
+    display:block;
+    margin:10px;
+    background-color: bisque;
+}
+ .j{
+    background: linear-gradient(90deg,lightgray,lightyellow);
+} 
+#c {
+            padding: 5px 10px;
+            border-radius: 3px;
+            background-color: cadetblue;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        
+    }
+#gotocart{
+    padding: 10px;
+            border-radius: 3px;
+            background-color: cadetblue;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+}
+
+        </style>
+    </head>
+    <body class="j">
+        <span>
+        <h1 id="a">Trendy Life</h1>
+        <form action="/addtocart" method="GET">
+            <button type="submit" id="gotocart">Go To Cart</button>
+        </form>
+    </span>
+    
+        <div class="container">
+            <div class="item-1">
+                <h2>Kurtas</h2>
+                <img src="https://cdns.faridagupta.com/media/catalog/product/full_image/p/a/parinaz_nazia_cotton_silk_kurta_02.jpg" id="b">
+                <p><b>Description:</b>
+                    When it comes to clothes, Indian ladies have a lot of options. Whereas sarees, salwar suits, as well as lehengas, are constantly in style</p>
+                    <h3>Price:1000</h3>
+                <form action="/cart" method="GET">
+                    <input type="hidden" name="itemName" value="Kurtas">
+                    <input type="hidden" name="itemPrice" value="1000">
+                    <button type="submit" id="c">Add To Cart</button>
+            </form>
+            
+            </div>
+            <div class="item-1">
+                <h2>Jeans</h2>
+                <img src="https://i5.walmartimages.com/asr/19c4e3f0-da8b-47df-9f6a-20880c9718a3.192e56191f17f40d1be1fdd37dfe4c29.jpeg" id="b">
+                <p><b>Description:</b>
+                    Buy Jeans for Women online at best prices. Shop stylish ladies jeans, ripped, boyfriend, cropped, high waisted jeans for ladies/girls for all sizes from top</p>
+                    <h3>Price:2000</h3>
+                    <form action="/cart" method="GET">
+                        <input type="hidden" name="itemName" value="Jeans">
+                    <input type="hidden" name="itemPrice" value="2000">
+                    
+                <button type="submit" id="c">Add To Cart</button> 
+            </form>
+            </div>
+            <div class="item-1">
+                <h2>Sweaters</h2>
+                <img src="https://content.woolovers.com/img/o/40609_a334l_midnightgreen_w_1.jpg" id="b">
+                <p><b>Description:</b>
+                    Buy Sweaters for Women online at best prices. Shop stylish ladies jeans, ripped, boyfriend, cropped, high waisted jeans for ladies/girls for all sizes from top</p>
+                    <h3>Price:2000</h3>
+                    <form action="/cart" method="GET">
+                        <input type="hidden" name="itemName" value="Sweaters">
+                        <input type="hidden" name="itemPrice" value="2000">
+                <button type="submit" id="c">Add To Cart</button> 
+            </form>
+            </div>
+            </div>
+            <div class="container">
+            <div class="item-1">
+                <h2>Tops</h2>
+                <img src="https://i5.walmartimages.com/asr/ce1daf7f-cdf3-4c15-9437-d9088372ba39.9a118361f9fa524d66975052eea39dfd.jpeg" id="b">
+                <p><b>Description:</b>
+                    Scroll through our trending collection of tops & shirts for women. Grab the latest clothing from our womenswear collection on Pepe Jeans India.</p>
+                    <h3>Price:600</h3>
+                    <form action="/cart" method="GET">
+                        <input type="hidden" name="itemName" value="Tops">
+                        <input type="hidden" name="itemPrice" value="600">
+                <button type="submit" id="c">Add To Cart</button>
+            </form>
+            </div>
+            <div class="item-1">
+                <h2>T-shirts</h2>
+                <img src="https://i5.walmartimages.com/asr/934a14da-0920-4060-b1b2-7ac695d6e0ef_1.39d27101e50bfe7b99872b51ea9058cb.jpeg" id="b">
+                <p><b>Description:</b>
+                    The combination of a solid color T-shirt and jeans is an iconic, classic, time-tested look, no matter the season.</p>
+                    <h3>Price:800</h3>
+                    <form action="/cart" method="GET">
+                        <input type="hidden" name="itemName" value="T-shirts">
+                        <input type="hidden" name="itemPrice" value="800">
+                <button type="submit" id="c">Add To Cart</button>
+            </form>
+            </div>
+            <div class="item-1">
+                <h2>Shirts</h2>
+                <img src="https://content.woolovers.com/img/o/48894_j46l_winterfloral_w_5.jpg" id="b">
+                <p><b>Description:</b>
+                    Buy shirts for Women online at best prices. Shop stylish ladies jeans, ripped, boyfriend, cropped, high waisted jeans for ladies/girls for all sizes from top</p>
+                    <h3>Price:2000</h3>
+                    <form action="/cart" method="GET">
+                        <input type="hidden" name="itemName" value="Shirts">
+                        <input type="hidden" name="itemPrice" value="2000">
+                <button type="submit" id="c">Add To Cart</button> 
+            </form>
+            </div>
+            </div>
+            <div class="container">
+                <div class="item-1">
+                    <h2>Lehangas</h2>
+                    <img src="https://www.omsara.co.uk/wp-content/uploads/4705.--1650x2048.jpg" id="b">
+                    <p><b>Description:</b>
+                        When it comes to clothes, Indian ladies have a lot of options. Whereas sarees, salwar suits, as well as lehengas, are constantly in style</p>
+                        <h3>Price:1000</h3>
+                        <form action="/cart" method="GET">
+                            <input type="hidden" name="itemName" value="Lehangas">
+                        <input type="hidden" name="itemPrice" value="1000">
+                        
+                    <button type="submit" id="c">Add To Cart</button>
+                </form>
+                </div>
+                <div class="item-1">
+                    <h2>sarees</h2>
+                    <img src="https://i.pinimg.com/originals/09/3d/89/093d89ccdbfd0f6b330541c20a54f374.png" id="b">
+                    <p><b>Description:</b>
+                        Explore The Collection of Beautifully Designed Sarees From SIRIL on Amazon. Each Piece Is Elegantly Crafted And Will Surely Add to Your Wardrobe. Pair This Piece With Heels or Flats for A Graceful Look</p>
+                        <h3>Price:2000</h3>
+                        <form action="/cart" method="GET">
+                            <input type="hidden" name="itemName" value="sarees">
+                        <input type="hidden" name="itemPrice" value="2000">
+                    <button type="submit" id="c">Add To Cart</button>
+                </form> 
+                </div>
+                <div class="item-1">
+                    <h2>Crop Tops</h2>
+                    <img src="https://i.pinimg.com/originals/e8/d1/97/e8d19736cfb7ed479550190134d27d6c.jpg" id="b">
+                    <p><b>Description:</b>
+                        Buy crop tops for Women online at best prices. Shop stylish ladies jeans, ripped, boyfriend, cropped, high waisted jeans for ladies/girls for all sizes from top</p>
+                        <h3>Price:2000</h3>
+                        <form action="/cart" method="GET">
+                            <input type="hidden" name="itemName" value="Crop Tops">
+                            <input type="hidden" name="itemPrice" value="2000">
+                    <button type="submit" id="c">Add To Cart</button> 
+                </form>
+                
+                </div>
+        </div>
+    </body>
+</html>

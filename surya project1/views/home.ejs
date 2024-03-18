@@ -1,0 +1,100 @@
+<html>
+    <head>
+        <title></title>
+        <style>
+            body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image:url("https://wallpaperboat.com/wp-content/uploads/2019/10/free-website-background-21.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            
+        }
+        
+        nav {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+        h1{
+            text-align: center;
+            color:black;
+            
+        }
+        #code{
+            color: burlywood;
+        }
+        #data{
+            color:burlywood;
+        }
+        h2{
+            color:black;
+            text-align: center;
+        }
+        .img{
+            margin-left: 580px;
+            border-radius: 35px;
+        }
+        #button{
+            margin-left: 750px;
+            margin-top: 10px;
+            padding: 10px;
+            border-radius: 5px;
+            background-color: cadetblue;
+            color: #fff;
+        }
+        #btn{
+            padding: 10px;
+            border-radius: 5px;
+            
+        }
+        </style>
+    </head>
+    <body>
+       
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="/about">Categories</a></li>
+                <li><a href="/service">About Us</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+         <div>
+            <a href="/signin"><button type="button" id="btn">Login</button></a>
+            <a href="/signup"><button type="button" id="btn">SignUp</button></a>
+          </div> 
+        </nav>
+        <h1>Trendy Life</h1>
+        <h1>Hi <span id="data"><%= userData.name %></span></h1>
+        <h1> Welcome to <span id="code">Trendy Life</span></h1>
+        <h2> Let's begin your  shopping with us</h2>
+        <img class="img" src="http://1.bp.blogspot.com/-Xti3UfOzKGw/Ui83-mfgfpI/AAAAAAAAMcY/gqFW8r8kVXg/s1600/instagram-a_trendy_life-look-fashion-viajes-travels-looks-summer-piscina-free_time-japon020.jpg" width="400px" height="400px">
+        <a href="/about"><button id="button" type="button">View More</button></a>
+    </body>
+</html>

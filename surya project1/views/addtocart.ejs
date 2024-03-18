@@ -1,0 +1,75 @@
+<html>
+    <head>
+        <title></title>
+    </head>
+    <style>
+        body{
+            background-image: url("https://thumbs.dreamstime.com/z/beautiful-fashion-women-shopping-bags-trendy-lifestyle-urban-portrait-city-background-147859140.jpg");
+            background-size: cover; 
+            background-position: center;
+            margin: 0; 
+            padding: 0;
+        }
+        h1{
+            color:yellow;
+            margin-left: 400px;
+            padding-top: 110px;
+            font-size: 40px;
+            transition: color 0.3s ease;
+        }
+        .tbl{
+            margin-left: 400px;
+            color:whitesmoke;
+            font-size: 20px;
+            border: 5px solid yellow;
+        }
+        #products{
+            color:yellow;
+            font-size: 40px;
+        }
+        #nam{
+            color:yellow;
+            font-size: 30px;
+        }
+        #cos{
+            color:navy;
+            font-size: 30px;
+            transition: color 0.3s ease;
+            font-weight: normal;
+            transition: font-weight 0.3s ease;
+        }
+        #total{
+            font-size: 30px;
+        }
+        #amount{
+            font-size: 30px;
+        }
+        h1:hover {
+            color: rgb(6, 65, 6); 
+        }
+        #cos:hover{
+            color:yellow;
+            font-weight: bold;
+        }
+    </style>
+    <body>
+        <h1>YOUR CART</h1>
+        
+                <table class="tbl">
+                    <tr>
+                        <th id="products">Products </th>
+                        <th id="products">Cost </th>
+                    </tr>
+                    <% for(var i = 0;i < userData.productsData.length;i++){ %>
+                        <tr>
+                        <td id="nam"><%= userData.productsData[i] %></td>
+                        <td id="cos"><%= userData.cost[i] %></td></tr>
+                <% } %>
+                <tr class = "hover">
+                    <th id="total">Total Cost</th>
+                    <th id="amount"><%= amount %></th></tr>
+                </table>
+          
+           
+    </body>
+</html>

@@ -1,0 +1,174 @@
+<html>
+
+<head>
+  <title>Registration Form</title>
+
+  <style>
+    body {
+      background-image: url("https://tse1.mm.bing.net/th?id=OIP.DTqVjalGjFUAZCWQeC3f7QHaEo&pid=Api&P=0&h=180");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 100% 100%;
+      background-attachment: fixed;
+      position: relative;
+      width: 100vh;
+      height: 100vh;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 30px;
+      margin-left: 50px;
+    }
+
+    #surya {
+      display: flex;
+      flex-direction: column;
+      margin: auto;
+      width: 600px;
+      margin-top: 200px;
+      background: #fff;
+      padding-bottom: 10px;
+      margin-bottom: 100px;
+      cursor: pointer;
+      border-radius: 35px;
+      margin-top: 20px;
+      border-top-left-radius: 35px;
+      border-bottom-left-radius: 35px;
+      border-bottom-right-radius: 0px;
+      border-top-right-radius: 0px;
+      margin-right: 50vh;
+    }
+
+    .header {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      gap: 9px;
+      width: 100%;
+      margin-top: 10px;
+    }
+
+    .a {
+      display: flex;
+      align-items: center;
+      margin: auto;
+      width: 350px;
+      height: 50px;
+      background: #eaeaea;
+      border-radius: 6px;
+      gap: 5px;
+      padding-right: 20px;
+      padding-left: 20px;
+      margin-right: 50px;
+
+    }
+
+    .b {
+      display: flex;
+      gap: 30px;
+      margin: 60px auto;
+    }
+
+    .c {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 250px;
+      height: 59px;
+      color: #fff;
+      background: green;
+      border-radius: 10px;
+      font-size: 19px;
+      cursor: pointer;
+    }
+
+    .d {
+      padding-left: 32px;
+      font-size: 20px;
+    }
+
+    .name {
+      position: relative;
+      left: 5px;
+      top: 52px;
+      padding-left: 30px;
+      margin-top: 2px;
+      margin-bottom: 2px;
+    }
+
+    .b {
+      padding-left: 20px;
+    }
+
+    .g {
+      flex-direction: column;
+      margin: auto;
+      width: 600px;
+      background: #fff;
+      padding-bottom: 50px;
+      border: collapse;
+      padding-left: 20px;
+      column-span: 20px;
+      font-size: 18px;
+      padding-right: 20px;
+    }
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+    }
+    .welcome-message p{
+      font-size: 80px;
+      font-family: sans-serif;
+      font-style: oblique;
+      color:white;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div id="surya">
+      <form id="reg-form" action="/signupsubmit" method="GET">
+        <div class="header">
+          <h1>SignUp page</h1>
+        </div>
+        <div>
+          <h2 class="name">Name</h2>
+          <input class="a" type="text" id="name" name="full_name" placeholder="Enter Full Name">
+        </div>
+        <div>
+          <h2 class="name">Email</h2>
+          <input class="a" type="email" id="email" name="email" placeholder="Enter Email">
+        </div>
+        <div>
+          <h2 class="name">Password</h2>
+          <input class="a" type="password" id="password" name="password" placeholder="Enter Password">
+        </div>
+        <div>
+          <h2 class="name">Date of Birth</h2>
+          <input class="a" type="date" id="dob" name="dob">
+        </div><br><br>
+        <div class="d">
+          <input required type="checkbox" id="acceptTerms" name="acceptTerms">
+          <label for="acceptTerms">Accept Terms & Conditions</label>
+        </div>
+        <div class="b">
+          <input class="c" type="Submit" value="Submit" />
+        </div>
+    </div>
+
+
+    </form>
+    <div class="welcome-message">
+      <p>Welcome<br> to<br>the<br>Trendy<br> Life!<span>🛒</span></p>
+    </div>
+
+  </div>
+
+
+
+</body>
+
+</html>
